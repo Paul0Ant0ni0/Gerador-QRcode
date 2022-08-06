@@ -40,15 +40,15 @@
 
 
 function limparCampos(){
-    qrcode.clear()
     document.getElementById('link').value = ''
-    document.getElementById('altura').value = ''
-    document.getElementById('largura').value = ''
+    /*document.getElementById('altura').value = ''
+    document.getElementById('largura').value = ''*/
 
 }
 
 
 function refresh(){
+    qrcode.clear()
     location.reload()
 
 }
