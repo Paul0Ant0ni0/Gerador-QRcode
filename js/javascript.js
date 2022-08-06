@@ -1,17 +1,12 @@
 
-      qrcode = ""
     function gerarQrCode(){
     const link = document.getElementById('link').value
     /*const altura = document.getElementById('altura').value
     const largura = document.getElementById('largura').value*/
     const cor = document.getElementById('cor').value
     const cor2 = document.getElementById('cor2').value
-    let qr = document.getElementById("qrcode").height
+   
 
-
-    if(qr >= 200){
-        refresh()
-    }
 
     if(link === ""){
         alert(`Preencha campo link!`)
