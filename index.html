@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
+   
+    <title>Gerador de Qrcode</title>
+</head>
+<body>
+
+    <span id="container">
+       
+
+        <form action="" id="box">
+            <h3 id="valor">Gerador de Código QR</h3>
+            <p>Cole um URL ou digite o texto <br> para criar o código QR</p>
+            <div style="margin: 0 auto;" id="qrcode"></div>
+            <div id="inputs">
+            <label>Link: <input type="text" placeholder="Digite o texto ou url..." id="link"></label><br>
+            <!--<label>Altura: <input type="number" min="1" max="180" id="altura" placeholder="px" class="tamanho"></label>
+            <label>Largura: <input type="number" min="1" max="180" id="largura" placeholder="px" class="tamanho"></label><br>-->
+            <label>Cor do pixels: <input type="color" id="cor"></label><br>
+            <label>Cor de fundo: <input type="color" value="#FFFFFF" id="cor2"></label>
+            </div>
+        </form>
+
+            <section id="card">
+                <button class="buttons" id="btn" onclick="gerarQrCode()">Gerar</button>
+                <button class="buttons" onclick="refresh()">Limpar</button>
+            </section>
+        
+        
+     
+    </span>
+    
+
+
+    <script src="/js/qrcode.min.js"></script>
+    <script src="/js/javascript.js"></script>
+
+</body>
+</html>
